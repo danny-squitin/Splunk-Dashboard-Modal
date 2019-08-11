@@ -1,0 +1,118 @@
+<dashboard script="modal.js">
+  <label>Modal Example</label>
+  <row>
+    <panel>
+      <html>
+        <a id="btn1" class="btn btn-info">i</a><font class="newTitle"> Panel #1</font>
+      </html>
+      <html>
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <span class="close"></span>
+            <p>Panel #1 - Information</p>
+          </div>
+        </div>
+        <style>
+          .newTitle {
+            font-size: 18pt;
+            font-weight: bold;
+            vertical-align: middle;
+            }
+          
+          .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 275.5px;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          }
+          
+          /* Modal Content */
+          .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%;
+          }
+          
+          /* The Close Button */
+          .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+          }
+          
+          .close:hover,
+          .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        </style>
+      </html>
+      <single>
+        <search>
+          <query>| makeresults | eval Thing = 300 | fields Thing</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <html>
+        <a id="btn2" class="btn btn-info">i</a><font class="newTitle"> Panel #2</font>
+      </html>
+      <html>
+        <div id="modal2" class="modal">
+          <div class="modal-content">
+            <span class="close"></span>
+            <p>Panel #2 - Information</p>
+          </div>
+        </div>
+      </html>
+      <single>
+        <search>
+          <query>| makeresults | eval Thing = 400 | fields Thing</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+    </panel>
+    <panel>
+      <html>
+        <a id="btn3" class="btn btn-info">i</a><font class="newTitle"> Panel #3</font>
+      </html>
+      <html>
+        <div id="modal3" class="modal">
+          <div class="modal-content">
+            <span class="close"></span>
+            <p>Panel #3 - Information</p>
+          </div>
+        </div>
+      </html>
+      <single>
+        <search>
+          <query>| makeresults | eval Thing = 500 | fields Thing</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+    </panel>
+  </row>
+</dashboard>
