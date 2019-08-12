@@ -1,5 +1,5 @@
 # Splunk-Dashboard-Modal
-Have you ever needed to explain a Splunk dashboard panel in more detail, but didnt want to clutter your panel title? This repo provides several examples for how you can add modal(s) to your Splunk dashboard using simple inline HTML, CSS and JavaScript. Install the app directly and use as a reference or use the simple xml and modal.js individually and customize to your liking.
+Have you ever needed to explain a Splunk dashboard panel in more detail, but didn't want to clutter your panels? This repo provides several examples for how you can add modal(s) to your Splunk dashboard using simple inline HTML, CSS and JavaScript. The modals can be edited to include overviews, summaries, tables, etc, all while keeping your dashboard UI clean. Install the app directly and use the code as a reference or use the simple xml and modal.js individually and customize to your liking.
 
 ![Splunk Dashboard Modal](https://github.com/BrewinBeerz/Splunk-Dashboard-Modal/blob/master/splunk_modal.gif)
 ## Files:
